@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>サポート — nuri²マップ</title>
+<meta name="description" content="nuri²マップ（ぬりぬりマップ）のサポートページ。よくある質問、データ削除の依頼、お問い合わせ先。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23ff6d00'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'>n²</text></svg>">
+<style>
+  :root{ --accent:#ff6d00; --ink:#141310; --muted:#6b675f; --bg:#faf8f5; --card:#fff; --line:rgba(20,19,16,.08); --grad:linear-gradient(120deg,#ff6d00,#ff9e40 55%,#ffc46b); }
+  @media (prefers-color-scheme: dark){ :root{ --ink:#f2efe9; --muted:#a49e93; --bg:#121110; --card:#1c1b18; --line:rgba(255,255,255,.09);} }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.85 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent)}
+  .wrap{max-width:760px;margin:0 auto;padding:0 20px}
+  nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(16px);background:color-mix(in srgb, var(--bg) 78%, transparent);border-bottom:1px solid var(--line)}
+  nav .wrap{max-width:1120px;display:flex;align-items:center;gap:28px;height:64px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--ink);text-decoration:none}
+  .logo .mark{width:34px;height:34px;border-radius:10px;background:var(--grad);color:#fff;display:grid;place-items:center;font-size:.95rem}
+  nav .links{margin-left:auto;display:flex;gap:22px;font-size:.92rem}
+  nav .links a{color:var(--muted);text-decoration:none}
+  header{padding:56px 0 8px}
+  .kicker{color:var(--accent);font-weight:800;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
+  h1{font-size:clamp(1.9rem,5vw,2.7rem);line-height:1.3;margin:10px 0 8px;letter-spacing:-.01em}
+  .sub{color:var(--muted)}
+  h2{font-size:1.22rem;margin:42px 0 12px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px 26px;margin:16px 0}
+  .card h3{margin:0 0 8px;font-size:1.02rem}
+  .card p{margin:0;color:color-mix(in srgb, var(--ink) 84%, var(--muted));font-size:.95rem}
+  .btn{display:inline-block;margin-top:14px;padding:11px 22px;border-radius:999px;background:var(--ink);color:var(--bg);text-decoration:none;font-weight:700;font-size:.92rem}
+  details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 20px;margin:10px 0}
+  summary{font-weight:700;cursor:pointer}
+  details p{color:color-mix(in srgb, var(--ink) 84%, var(--muted));font-size:.95rem;margin:10px 0 2px}
+  ol,ul{padding-left:1.3em}
+  li{margin:4px 0;color:color-mix(in srgb, var(--ink) 88%, var(--muted))}
+  footer{margin-top:64px;border-top:1px solid var(--line);padding:32px 0 48px;color:var(--muted);font-size:.88rem}
+  footer .wrap{max-width:1120px;display:flex;gap:20px;flex-wrap:wrap}
+  footer a{color:var(--muted);text-decoration:none;margin-right:18px}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="./"><span class="mark">n²</span>nuri²マップ</a>
+  <div class="links"><a href="./">紹介</a><a href="privacy.html">プライバシー</a><a href="terms.html">利用規約</a></div>
+</div></nav>
+
+<header><div class="wrap">
+  <p class="kicker">Support</p>
+  <h1>サポート</h1>
+  <p class="sub">よくある質問と、お問い合わせ・データ削除の方法です。</p>
+</div></header>
+
+<main><div class="wrap">
+
+  <h2>お問い合わせ</h2>
+  <div class="card">
+    <h3>🐙 GitHub Issues（不具合報告・要望・質問）</h3>
+    <p>不具合の報告、機能の要望、その他のお問い合わせは GitHub の Issue で受け付けています。返信には数日いただく場合があります。位置情報そのものや、個人が特定できる情報は Issue に書かないでください。</p>
+    <a class="btn" href="https://github.com/orihami/nurinuri-map-site/issues">Issue を開く</a>
+  </div>
+
+  <h2>アカウント・データの削除</h2>
+  <div class="card">
+    <h3>アプリから削除できます</h3>
+    <p>サーバーに保存したデータとアカウントは、アプリ内でいつでも削除できます。</p>
+    <ol>
+      <li>アプリの「設定」を開く</li>
+      <li>「サーバーと同期 / アカウント」の画面を開く</li>
+      <li>「アカウントとデータを削除」を実行する</li>
+    </ol>
+    <p>端末内の記録は、アプリを削除（アンインストール）すると消えます。アプリを開けない事情がある場合は、上の GitHub Issues から「データ削除の依頼」と明記してご連絡ください。本人確認のうえ、サーバー上のデータを削除します。</p>
+  </div>
+
+  <h2>よくある質問</h2>
+
+  <details><summary>道が記録されません</summary>
+    <p>①記録がオンになっているか、②位置情報の許可が「常に許可」になっているかを確認してください。省電力モードやOSの電池最適化が強いと、バックグラウンド記録が止まることがあります。OS設定で本アプリを電池最適化の対象外にすると改善する場合があります。</p></details>
+
+  <details><summary>アカウントは必須ですか？</summary>
+    <p>いいえ。ログインしなくても、記録・閲覧の基本機能はすべて使えます。ログインは、機種変更時の復元やブラウザ版での閲覧など、同期を使う場合だけ必要です。</p></details>
+
+  <details><summary>記録した道や場所を、他の人に見られますか？</summary>
+    <p>見られません。共有は、あなたが相手と範囲を選んで有効にした場合だけです。「見るだけのリンク」も、あなたが作成した場合にだけ有効で、いつでも止められます。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p></details>
+
+  <details><summary>機種変更で記録を引き継げますか？</summary>
+    <p>はい。同期を有効にしてログインしていれば、新しい端末で同じアカウントでログインし「サーバーから復元」できます。アプリのバックアップ / 復元機能でも移行できます。</p></details>
+
+  <details><summary>バッテリー消費が気になります</summary>
+    <p>位置の記録はバッテリーを使います。記録の一時停止はアプリからいつでもできます。長時間記録しないときは、記録をオフにしてください。</p></details>
+
+  <details><summary>道の線が実際の道とずれています</summary>
+    <p>本アプリはGPSの軌跡そのものを記録しており、道路へ吸着させる補正はしていません。建物の中や地下、高い建物の間では誤差が大きくなります。生の記録は保持されるため、表示は将来の改善で変わることがあります。</p></details>
+
+  <details><summary>ヘルスケア連携は何を読み取りますか？</summary>
+    <p>連携を有効にした場合だけ、歩数・消費カロリー・心拍数・睡眠を読み取り、1日の振り返りに表示します。読み取り専用で、書き込みやサーバーへの送信はしません。</p></details>
+
+</div></main>
+
+<footer><div class="wrap">
+  <span>© 2026 nuri²マップ</span>
+  <span style="margin-left:auto"><a href="./">紹介</a><a href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用規約</a></span>
+</div></footer>
+</body>
+</html>

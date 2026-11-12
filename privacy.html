@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー — nuri²マップ</title>
+<meta name="description" content="nuri²マップ（ぬりぬりマップ）のプライバシーポリシー。扱う情報、使い方、保存場所、共有、削除方法について説明します。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23ff6d00'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'>n²</text></svg>">
+<style>
+  :root{ --accent:#ff6d00; --ink:#141310; --muted:#6b675f; --bg:#faf8f5; --card:#fff; --line:rgba(20,19,16,.08); --grad:linear-gradient(120deg,#ff6d00,#ff9e40 55%,#ffc46b); }
+  @media (prefers-color-scheme: dark){ :root{ --ink:#f2efe9; --muted:#a49e93; --bg:#121110; --card:#1c1b18; --line:rgba(255,255,255,.09);} }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.85 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent)}
+  .wrap{max-width:760px;margin:0 auto;padding:0 20px}
+  nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(16px);background:color-mix(in srgb, var(--bg) 78%, transparent);border-bottom:1px solid var(--line)}
+  nav .wrap{max-width:1120px;display:flex;align-items:center;gap:28px;height:64px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--ink);text-decoration:none}
+  .logo .mark{width:34px;height:34px;border-radius:10px;background:var(--grad);color:#fff;display:grid;place-items:center;font-size:.95rem}
+  nav .links{margin-left:auto;display:flex;gap:22px;font-size:.92rem}
+  nav .links a{color:var(--muted);text-decoration:none}
+  header{padding:56px 0 8px}
+  .kicker{color:var(--accent);font-weight:800;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
+  h1{font-size:clamp(1.9rem,5vw,2.7rem);line-height:1.3;margin:10px 0 8px;letter-spacing:-.01em}
+  .meta{color:var(--muted);font-size:.9rem}
+  .summary{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px 24px;margin:28px 0 8px}
+  .summary b{color:var(--accent)}
+  .summary ul{margin:8px 0 0;padding-left:1.2em}
+  main{padding-bottom:20px}
+  h2{font-size:1.22rem;margin:40px 0 10px;padding-top:8px}
+  h2 .no{color:var(--accent);margin-right:.5em}
+  p,li{color:color-mix(in srgb, var(--ink) 88%, var(--muted))}
+  ul{padding-left:1.3em}
+  li{margin:5px 0}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:.93rem;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+  th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:color-mix(in srgb, var(--accent) 8%, var(--card));font-size:.86rem}
+  tr:last-child td{border-bottom:none}
+  .callout{border-left:4px solid var(--accent);background:var(--card);border-radius:0 16px 16px 0;padding:14px 18px;margin:16px 0;font-size:.95rem}
+  footer{margin-top:64px;border-top:1px solid var(--line);padding:32px 0 48px;color:var(--muted);font-size:.88rem}
+  footer .wrap{max-width:1120px;display:flex;gap:20px;flex-wrap:wrap}
+  footer a{color:var(--muted);text-decoration:none;margin-right:18px}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="./"><span class="mark">n²</span>nuri²マップ</a>
+  <div class="links"><a href="./">紹介</a><a href="terms.html">利用規約</a><a href="support.html">サポート</a></div>
+</div></nav>
+
+<header><div class="wrap">
+  <p class="kicker">Privacy Policy</p>
+  <h1>プライバシーポリシー</h1>
+  <p class="meta">最終更新日: 2026年11月12日 ／ 適用: nuri²マップ（iOS版・Android版・ブラウザ版）</p>
+  <div class="summary">
+    <b>要点だけ先に。</b>
+    <ul>
+      <li>記録は<b>まずあなたの端末の中</b>に保存されます。</li>
+      <li><b>広告・トラッキング・データの販売は一切しません。</b>広告SDKや行動解析SDKは入れていません。</li>
+      <li>サーバーへの同期は<b>任意</b>です。ログインしなければ、記録が端末の外に出ることはありません（地図表示のための通信を除く）。</li>
+      <li>データは<b>いつでも削除できます</b>（「6. データの削除」参照）。</li>
+    </ul>
+  </div>
+</div></header>
+
+<main><div class="wrap">
+
+  <p>nuri²マップ（以下「本アプリ」）は、一度通った道が地図にぬられていく記録アプリです。本アプリの開発者（以下「開発者」）は、本ポリシーに基づき、利用者の情報を取り扱います。</p>
+
+  <h2><span class="no">1</span>取得する情報と目的</h2>
+  <table>
+    <tr><th style="width:30%">情報</th><th style="width:38%">内容</th><th>利用目的</th></tr>
+    <tr><td><b>位置情報</b>（正確な位置情報）</td><td>記録をオンにしている間のGPS位置情報。アプリがバックグラウンドにある間も記録します。</td><td>通った道の記録・表示、滞在した場所の判定、1日の振り返りの作成のため。これ以外の目的には使いません。</td></tr>
+    <tr><td><b>アカウント情報</b>（同期を使う場合のみ）</td><td>Googleログインで取得するメールアドレスと、アカウントを識別するためのID。パスワードは取得しません。</td><td>ログインの確認と、あなたのデータをあなたのものとして保存・復元するため。</td></tr>
+    <tr><td><b>利用者が登録したコンテンツ</b></td><td>場所の名前・メモ・分類、追加した写真、訪問日の記録、移動手段の修正など。</td><td>アプリ内で表示・管理するため。</td></tr>
+    <tr><td><b>写真ライブラリへのアクセス</b>（使う場合のみ）</td><td>「いた時間の写真」機能や写真の追加で、利用者が許可した範囲の写真。</td><td>滞在した場所に写真を結びつけて表示するため。許可は使うときにだけ求めます。</td></tr>
+    <tr><td><b>ヘルスケア情報</b>（連携を有効にした場合のみ）</td><td>歩数、消費カロリー、心拍数、睡眠（Apple ヘルスケア / Android ヘルスコネクトから読み取り）。</td><td>1日の振り返り画面での表示のみ。読み取り専用で、書き込みはしません。サーバーや第三者へ送信しません。</td></tr>
+  </table>
+  <p>本アプリは、広告配信、利用者の追跡（トラッキング）、データの販売を行いません。また、それらのための第三者SDKを組み込んでいません。</p>
+
+  <h2><span class="no">2</span>保存場所と同期</h2>
+  <ul>
+    <li>記録は原則として<b>あなたの端末内</b>に保存されます。</li>
+    <li>アプリの設定でログインして同期を有効にした場合に限り、位置の記録・場所・訪問のデータが、開発者が運営する本アプリ専用サーバーにも保存されます。これは機種変更時の復元や、ブラウザ版での閲覧のためです。</li>
+    <li>サーバーとの通信はすべてHTTPSで暗号化されます。サーバーに保存されるセッション情報はハッシュ化され、元の値を保持しません。</li>
+    <li>端末のOS標準バックアップ機能（iCloudバックアップ / Androidの自動バックアップ）により、端末内データがあなたのOSアカウントの領域にバックアップされる場合があります。これはOSの仕組みによるもので、各OS提供事業者のポリシーに従います。</li>
+  </ul>
+
+  <h2><span class="no">3</span>共有機能について</h2>
+  <ul>
+    <li>あなたが選んだ相手にだけ、あなたが選んだ範囲（道・場所・現在の位置・写真・行った記録）を共有できます。共有の範囲は相手ごとに設定でき、いつでも変更・停止できます。</li>
+    <li>「見るだけのリンク」を作成した場合、そのリンクを知っている人は、ログインなしで、あなたが選んだ範囲を閲覧できます。リンクはいつでも無効化できます。</li>
+    <li>上記以外の形で、あなたの記録が他の利用者や第三者に公開されることはありません。</li>
+  </ul>
+
+  <h2><span class="no">4</span>外部サービスの利用</h2>
+  <ul>
+    <li><b>Google マップ / Google Places</b>: 地図の表示、場所やお店の検索のために、表示範囲や検索地点の位置などをGoogleへ送信することがあります。これらの情報はGoogleのプライバシーポリシーに従って取り扱われます。Googleの規約に基づき、本アプリが恒久的に保存するのは場所の識別子（Place ID）のみで、店舗情報などは一時的な表示のためにのみ利用します。</li>
+    <li><b>Googleログイン</b>: 同期機能を使う場合の本人確認のために利用します。</li>
+    <li><b>市区町村データ</b>: 塗り率の計算に使う行政区域・道路データは端末内に同梱されており、この計算のために位置情報を外部へ送信することはありません。</li>
+  </ul>
+
+  <h2><span class="no">5</span>許可（パーミッション）について</h2>
+  <ul>
+    <li><b>位置情報（常に許可）</b>: バックグラウンドで道を記録するために使います。記録をオフにしている間は記録しません。許可しない場合、地図の閲覧など位置記録以外の機能は使えますが、道の記録はできません。</li>
+    <li><b>通知</b>: 週1回の振り返り通知（初期設定OFF）などに使います。</li>
+    <li><b>写真・ヘルスケア・身体活動（歩数）</b>: 対応する機能を使うときにだけ許可を求めます。</li>
+    <li>これらの許可は、OSの設定からいつでも取り消すことができます。</li>
+  </ul>
+
+  <h2><span class="no">6</span>データの削除</h2>
+  <div class="callout">アカウントとサーバー上のデータは、アプリの「設定」から削除できます。削除すると、そのアカウントのサーバー上の記録はすべて消去されます。</div>
+  <ul>
+    <li><b>サーバー上のデータ</b>: アプリ内「設定」→ アカウント / サーバーと同期 の画面から、アカウントとデータを削除できます。</li>
+    <li><b>端末内のデータ</b>: アプリを削除（アンインストール）すると、端末内の記録も削除されます。</li>
+    <li>アプリにアクセスできなくなった場合などは、<a href="support.html">サポートページ</a>から削除を依頼できます。本人確認のうえ対応します。</li>
+  </ul>
+
+  <h2><span class="no">7</span>お子様の利用について</h2>
+  <p>本アプリは、特定の年齢層を対象としたものではありません。お子様が利用する場合は、保護者の方が位置情報の記録と共有設定をご確認ください。</p>
+
+  <h2><span class="no">8</span>ポリシーの変更</h2>
+  <p>本ポリシーを変更する場合は、このページで告知し、最終更新日を更新します。重要な変更については、アプリ内でもお知らせします。</p>
+
+  <h2><span class="no">9</span>お問い合わせ</h2>
+  <p>本ポリシーやデータの取り扱いに関するお問い合わせは、<a href="support.html">サポートページ</a>をご覧ください。</p>
+
+</div></main>
+
+<footer><div class="wrap">
+  <span>© 2026 nuri²マップ</span>
+  <span style="margin-left:auto"><a href="./">紹介</a><a href="terms.html">利用規約</a><a href="support.html">サポート</a></span>
+</div></footer>
+</body>
+</html>
