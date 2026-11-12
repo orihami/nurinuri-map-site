@@ -56,7 +56,7 @@
   .phone{width:min(330px,84vw);border-radius:44px;background:#0c0c0c;padding:10px;flex:none;
     box-shadow:0 34px 70px rgba(30,18,0,.28),0 4px 14px rgba(0,0,0,.18)}
   .phone.tilt{transform:rotate(-1.2deg)}
-  .phone img{display:block;width:100%;height:auto;border-radius:35px}
+  .phone img,.phone video{display:block;width:100%;height:auto;border-radius:35px}
   .float{position:absolute;padding:12px 16px;border-radius:18px;background:var(--card);border:1px solid var(--line);
     box-shadow:0 16px 36px rgba(30,18,0,.14);font-size:.84rem;font-weight:700;text-align:left;line-height:1.45;z-index:3}
   .float small{display:block;color:var(--muted);font-weight:600;font-size:.72rem}
@@ -133,9 +133,16 @@
   <div class="stage">
     <div class="float f1">🏯 市区町村の塗り率<small>あと少しでこの街コンプリート</small></div>
     <div class="float f2">✨ はじめての道は水色<small>通るたび、地図が育っていく</small></div>
-    <div class="phone tilt"><img src="img/01_lifetime_map.png" alt="nuri²マップの地図画面（実際のアプリ画面）。通った道がオレンジ色にぬられている" width="360" height="640"></div>
+    <div class="phone tilt"><img src="img/store_01_home.png" alt="nuri²マップの地図画面（実際のアプリ画面）。東京駅周辺の地図の上に、通った道がオレンジ色にぬられている" width="360" height="640"></div>
   </div>
-  <p class="realnote">※ このページの画面はすべて、Android版アプリをエミュレータ上で実際に動作させて撮影した本物の画面です。撮影には東京駅周辺のテストデータを使っているため、個人情報は一切含まれていません（地図は「道だけ」表示モード）。</p>
+  <p class="realnote">※ このページの画面はすべて、Android版アプリをエミュレータ上で実際に動作させて撮影した本物の画面です。撮影には東京駅周辺のテストデータを使っているため、個人情報は一切含まれていません。</p>
+
+  <div class="stage" style="padding-top:44px">
+    <div class="phone">
+      <video src="img/painting.mp4" poster="img/vf00.png" autoplay muted loop playsinline width="360" height="693" aria-label="1日の再生で、経路が地図の上にぬられていく様子"></video>
+    </div>
+  </div>
+  <p class="realnote">▲ 1日の再生で、道がぬられていく様子。エミュレータで撮影した実アプリの再生画面と、同じ経路の地図画面を合成したイメージ動画です（経路・時刻・カードの表示は実アプリそのまま）。</p>
 </div></header>
 
 <section id="shots"><div class="wrap">
@@ -145,9 +152,9 @@
 
   <div class="shots">
     <div class="shot">
-      <div class="phone"><img src="img/03_today_first_time.png" alt="はじめての道が水色で表示された地図画面" loading="lazy" width="360" height="640"></div>
+      <div class="phone"><img src="img/store_03_today.png" alt="今日の地図画面。歩いた道が、はじめて・前にも・ほかに色分けされて表示されている" loading="lazy" width="360" height="640"></div>
       <h3>✨ はじめての道</h3>
-      <p>今日はじめて通った道は水色に。絞り込みで「はじめての道」だけを光らせることもできます。</p>
+      <p>今日はじめて通った道、前にも通った道、その他の道を色分けして表示。絞り込みで「はじめての道」だけを光らせることもできます。</p>
     </div>
     <div class="shot">
       <div class="phone"><img src="img/16b_day_overview.png" alt="1日の画面。地図と再生バー、その日のまとめ" loading="lazy" width="360" height="640"></div>
@@ -155,7 +162,7 @@
       <p>その日の移動を地図とバーで再生。「この日の全体」から、時間の流れをそのまま追えます。</p>
     </div>
     <div class="shot">
-      <div class="phone"><img src="img/16_cities.png" alt="市区町村の塗り率シート。千代田区・中央区の塗り率が表示されている" loading="lazy" width="360" height="640"></div>
+      <div class="phone"><img src="img/store_02_cities.png" alt="地図の上に市区町村の塗り率シート。千代田区・中央区の塗り率が表示されている" loading="lazy" width="360" height="640"></div>
       <h3>🏯 市区町村の塗り率</h3>
       <p>市区町村ごとに「ぬった道 / 道路全体」の割合を表示。街をコンプリートしていく楽しさがあります。</p>
     </div>
@@ -177,6 +184,17 @@
   </div>
 </div></section>
 
+<section id="story"><div class="wrap">
+  <p class="kicker">Why it sticks</p>
+  <h2>たまっていくのが、面白い。</h2>
+  <p class="sub">ぬりぬりマップの面白さは、1回開いたときじゃなくて、続けた先にあります。</p>
+  <div class="steps">
+    <div class="step"><div class="ico" style="font-size:1.7rem">🧭</div><h3>自分の移動が、全部見える</h3><p>塗った道が蓄積していくほど、自分がどのくらい移動して、どこまで行ったのかが地図に残っていく。「自分、いろいろ行ったな」が、目で見て分かるようになります。</p></div>
+    <div class="step"><div class="ico" style="font-size:1.7rem">📍</div><h3>「この店、行ったな」がたまる</h3><p>立ち寄った場所は自動で記録されて、行った店や場所がコレクションみたいに増えていく。何回行ったかも、勝手に数えてくれます。</p></div>
+    <div class="step"><div class="ico" style="font-size:1.7rem">✨</div><h3>「前ここ通ったことあったんだ」</h3><p>ちょっと行った先で、過去の自分の足あとと再会する。忘れていた寄り道や、昔の通学路が、地図の中に残っています。</p></div>
+  </div>
+</div></section>
+
 <section id="features"><div class="wrap">
   <p class="kicker">Features</p>
   <h2>歩くほど、地図が育つ。</h2>
@@ -193,7 +211,7 @@
     <div class="cell"><div class="ico">🔍</div><h3>お店を探せる</h3>
       <p>地図上のお店をタップ、またはアプリ内検索で、評価・営業時間・口コミをその場で確認できます。</p></div>
     <div class="cell wide"><div class="ico">🌃</div><h3>「道だけ」モード</h3>
-      <p>地図を消して、自分の道だけが光る表示にも切替可能。シンプル / 衛星 / ハイブリッドの地図、GPSの生の軌跡（欠けた部分は点線）表示にも対応しています。このページの画面写真もこのモードです。</p></div>
+      <p>地図を消して、自分の道だけが光る表示にも切替可能。シンプル / 衛星 / ハイブリッドの地図、GPSの生の軌跡（欠けた部分は点線）表示にも対応しています。1日の再生画面は、この「道だけ」スタイルで表示されます。</p></div>
     <div class="cell"><div class="ico">📖</div><h3>1日の振り返り</h3>
       <p>日ごとの距離・移動時間・行った場所を一覧表示。タップすれば、その日の地図とタイムラインを再生できます。</p></div>
     <div class="cell"><div class="ico">☁️</div><h3>バックアップと同期</h3>
